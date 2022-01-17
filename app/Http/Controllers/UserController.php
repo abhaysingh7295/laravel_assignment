@@ -62,6 +62,7 @@ class UserController extends Controller
         $user->last_name = $request->last_name;
         $user->phone_number = $request->phone_number;
         $user->date_of_birth = $request->date_of_birth;
+        $user->address = $request->address;
         $user->is_vaccinated = $request->is_vaccinated;
         if($request->is_vaccinated=='YES'){
             if($request->vaccine_name=="COVAXIN" || $request->vaccine_name=="COVISHIELD"){
