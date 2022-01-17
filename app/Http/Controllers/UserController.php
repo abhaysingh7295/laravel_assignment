@@ -21,7 +21,7 @@ class UserController extends Controller
 
         $payload = [
             'message' => 'success',
-            'sprint' => $user,
+            'users' => $user,
 
         ];
         return response()->json($payload, 200);
